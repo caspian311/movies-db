@@ -17,7 +17,11 @@
       <div><span class="label">Actors:</span> <span ng-repeat="actor in movie.actors">{{actor}}{{ $last ? '' : ', ' }}</span></div>
       <div><span class="label">Release:</span> {{movie.release}}</div>
    </div>
-   <div class="movie" ng-hide="filteredMovies.length">
+   <div class="movie" ng-hide="errorMessage || filteredMovies.length">
       No results
+   </div>
+
+   <div class="error" ng-hide="!errorMessage">
+      <span class="label">Error:</span> Could not find the movies...
    </div>
 </div>

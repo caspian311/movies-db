@@ -1,11 +1,17 @@
 $font-stack: fantasy;
 $font-size: 0.9em;
+
 $card-background: #eee;
 $card-padding: 10px;
 $card-margin: 10px;
 $card-border-size: 1px;
 $card-border-color: #000;
+
 $label-width: 100px;
+$error-label-font-size: $font-size + 1;
+
+$error-background: #FAAAAA;
+$error-border-color: #F73B3B;
 
 body {
   font-family: $font-stack;
@@ -22,10 +28,22 @@ body {
 
 .label {
   display: inline;
-  font-weight: bold;
   float: left;
   width: $label-width;
 }
+
+.error {
+  @extend .movie;
+  background: $error-background;
+  border-color: $error-border-color;
+
+  .label {
+    @extend .label;
+    margin-top: -0.3em;
+    font-size: $error-label-font-size;
+  }
+}
+
 
 #sorting {
   float: left;
