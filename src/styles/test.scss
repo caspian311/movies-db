@@ -1,20 +1,29 @@
+$font-stack: fantasy;
+$font-size: 0.9em;
+$card-background: #eee;
+$card-padding: 10px;
+$card-margin: 10px;
+$card-border-size: 1px;
+$card-border-color: #000;
+$label-width: 100px;
+
 body {
-  font-size: fantasy;
-  font-family: 0.9em;
+  font-family: $font-stack;
+  font-size: $font-size;
 }
 
 .movie {
   display: block;
-  background: #eee;
-  padding: 10px;
-  margin: 10px;
-  border: solid 1px #000;
+  background: $card-background;
+  padding: $card-padding;
+  margin: $card-margin;
+  border: solid $card-border-size $card-border-color;
 }
 
 .label {
   display: inline;
   font-weight: bold;
   float: left;
-  width: 100px;
+  width: $label-width;
 }
 
