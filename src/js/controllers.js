@@ -7,6 +7,6 @@ testControllers.controller('HomeCtrl', ['$scope', 'MoviesService', function($sco
       $scope.errorMessage = 'Movies failed to load: ' + arguments;
    });
    $scope.sortOrder = 'release';
-   $scope.reverse = true;
+   $scope.reverse = false;
 }]);
 
