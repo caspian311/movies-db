@@ -1,0 +1,32 @@
+[
+   {
+      "title": "Star Wars IV: A New Hope",
+      "release": "1977",
+      "actors": [ "Mark Hamill", "Harrison Ford", "Carrie Fisher" ]
+   },
+   {
+      "title": "Star Wars V: Empire Strikes Back",
+      "release": "1980",
+      "actors": [ "Mark Hamill", "Harrison Ford", "Carrie Fisher" ]
+   },
+   {
+      "title": "Star Wars VI: Return of the Jedi",
+      "release": "1983",
+      "actors": [ "Mark Hamill", "Harrison Ford", "Carrie Fisher" ]
+   },
+   {
+      "title": "Star Wars I: Phantom Menace",
+      "release": "1999",
+      "actors": [ "Liam Neeson", "Ewan McGregor", "Natalie Portman" ]
+   },
+   {
+      "title": "Star Wars II: Attack of the Clones",
+      "release": "2002",
+      "actors": [ "Ewan McGregor", "Natalie Portman", "Hayden Christensen" ]
+   },
+   {
+      "title": "Star Wars III: Revenge of the Sith",
+      "release": "2005",
+      "actors": [ "Ewan McGregor", "Natalie Portman", "Hayden Christensen" ]
+   }
+]
