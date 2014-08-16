@@ -1,6 +1,13 @@
 module.exports = function(grunt) {
    grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
+      sass: {
+         dist: {
+            files: {
+               'web/styles/test.css': 'src/styles/test.scss'
+            }
+         }
+      },
       uglify: {
          options: {
             banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -13,5 +20,6 @@ module.exports = function(grunt) {
    });
 
    grunt.loadNpmTasks('grunt-contrib-uglify');
-   grunt.registerTask('default', ['uglify']);
+   grunt.loadNpmTasks('grunt-contrib-sass');
+   grunt.registerTask('default', ['sass', 'uglify']);
 };
