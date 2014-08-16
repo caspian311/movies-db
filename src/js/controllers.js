@@ -4,5 +4,7 @@ testControllers.controller('HomeCtrl', ['$scope', 'MoviesService', function($sco
    MoviesService.get().success(function(data) {
       $scope.movies = data;
    });
+   $scope.sortOrder = 'release';
+   $scope.reverse = true;
 }]);
 

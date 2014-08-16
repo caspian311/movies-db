@@ -1,7 +1,23 @@
 
-<div class="movie" ng-repeat="movie in movies">
-   <div><span class="label">Title:</span> {{movie.title}}</div>
-   <div><span class="label">Actors:</span> <span ng-repeat="actor in movie.actors">{{actor}}{{ $last ? '' : ', ' }}</span></div>
-   <div><span class="label">Release:</span> {{movie.release}}</div>
+<div id="sorting">
+   Sort by:
+   <select ng-model="sortOrder">
+      <option value="title">Title</option>
+      <option value="release">Release date</option>
+   </select>
 </div>
 
+<div id="search">
+   <input ng-model="query" placeholder="Search" />
+</div>
+
+<div id="main-content">
+   <div class="movie" ng-repeat="movie in filteredMovies = ( movies | filter: query | orderBy:sortOrder:reverse )">
+      <div><span class="label">Title:</span> {{movie.title}}</div>
+      <div><span class="label">Actors:</span> <span ng-repeat="actor in movie.actors">{{actor}}{{ $last ? '' : ', ' }}</span></div>
+      <div><span class="label">Release:</span> {{movie.release}}</div>
+   </div>
+   <div class="movie" ng-hide="filteredMovies.length">
+      No results
+   </div>
+</div>
