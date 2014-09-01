@@ -24,11 +24,12 @@ body {
   padding: $card-padding;
   margin: $card-margin;
   border: solid $card-border-size $card-border-color;
+  overflow: auto;
 }
 
 .label {
-  display: inline;
   float: left;
+  clear: both;
   width: $label-width;
 }
 
