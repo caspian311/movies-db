@@ -28,5 +28,20 @@
       "title": "Star Wars III: Revenge of the Sith",
       "release": "2005",
       "actors": [ "Ewan McGregor", "Natalie Portman", "Hayden Christensen" ]
+   },
+   {
+      "title": "Star Wars VII",
+      "release": "2015",
+      "actors": []
+   },
+   {
+      "title": "Star Wars VIII",
+      "release": "2017",
+      "actors": []
+   },
+   {
+      "title": "Star Wars IX",
+      "release": "2019",
+      "actors": []
    }
 ]
